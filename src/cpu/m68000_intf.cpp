@@ -1785,8 +1785,6 @@ INT32 SekRun(const INT32 nCycles)
 
 #ifdef EMU_M68K
 		nSekCyclesToDo = nCycles;
-		//CallRegisteredLuaMemHook(m68k_get_reg(NULL, M68K_REG_PC), 1, 0, LUAMEMHOOK_EXEC);
-
 		
 		if (nSekRESETLine[nSekActive] || nSekHALT[nSekActive])
 		{
