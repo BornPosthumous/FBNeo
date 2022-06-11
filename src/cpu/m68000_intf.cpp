@@ -1071,16 +1071,14 @@ UINT8 SekCheatRead(UINT32 a)
 {
 	return SekReadByte(a);
 }
+
 static void CallLuaExec(unsigned int newPC)
 {
 	CallRegisteredLuaMemHook(newPC, 1, 0, LUAMEMHOOK_EXEC);
 }
 
-
 INT32 SekInit(INT32 nCount, INT32 nCPUType)
 {
-	m68k_set_pc_changed_callback(CallLuaExec);
-
 	DebugCPU_SekInitted = 1;
 	
 	struct SekExt* ps = NULL;
@@ -1209,6 +1207,7 @@ INT32 SekInit(INT32 nCount, INT32 nCPUType)
 			SekExit();
 			return 1;
 		}
+		m68k_set_pc_changed_callback(CallLuaExec);
 #endif
 
 #ifdef EMU_A68K
@@ -2478,6 +2477,8 @@ bool SekDbgSetRegister(SekRegister nRegister, UINT32 nValue)
 				M68000_regs.pc = nValue;
 				A68KChangePC(M68000_regs.pc);
 #endif
+			} else {
+				m68k_set_reg(M68K_REG_PC, nValue);
 			}
 			SekClose();
 			return true;
