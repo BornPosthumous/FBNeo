@@ -2,6 +2,7 @@
 /* ========================= LICENSING & COPYRIGHT ======================== */
 /* ======================================================================== */
 
+
 #if 1
 static const char copyright_notice[] =
 "MUSASHI\n"
@@ -1009,7 +1010,8 @@ void m68k_init(void)
 	m68k_set_cmpild_instr_callback(NULL);
 	m68k_set_rte_instr_callback(NULL);
 	m68k_set_tas_instr_callback(NULL);
-	m68k_set_pc_changed_callback(NULL);
+	// This was overriding the other callback setting
+	//m68k_set_pc_changed_callback(NULL);
 	m68k_set_fc_callback(NULL);
 	m68k_set_instr_hook_callback(NULL);
 
