@@ -23,6 +23,10 @@ extern "C" {
 	#include "lauxlib.h"
 	#include "lualib.h"
 	#include "lstate.h"
+	#include <luasocket.h>
+	//luasocket
+	int luaopen_socket_core(lua_State* L);
+	int luaopen_mime_core(lua_State* L);
 }
 
 #include "burner.h"

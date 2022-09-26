@@ -364,6 +364,20 @@
     <ClInclude Include="..\..\src\dep\libs\libpng\pnglibconf.h" />
     <ClInclude Include="..\..\src\dep\libs\libpng\pngpriv.h" />
     <ClInclude Include="..\..\src\dep\libs\libpng\pngstruct.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\auxiliar.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\buffer.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\except.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\inet.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\io.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\luasocket.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\mime.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\options.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\select.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\socket.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\tcp.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\timeout.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\udp.h" />
+    <ClInclude Include="..\..\src\dep\libs\luasocket\wsocket.h" />
     <ClInclude Include="..\..\src\dep\libs\lua\lapi.h" />
     <ClInclude Include="..\..\src\dep\libs\lua\lauxlib.h" />
     <ClInclude Include="..\..\src\dep\libs\lua\lcode.h" />
@@ -701,6 +715,19 @@
     <ClCompile Include="..\..\src\dep\libs\lib7z\Ppmd8Dec.c" />
     <ClCompile Include="..\..\src\dep\libs\lib7z\Ppmd8Enc.c" />
     <ClCompile Include="..\..\src\dep\libs\lib7z\Sha1.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\auxiliar.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\buffer.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\except.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\inet.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\io.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\luasocket.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\mime.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\options.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\select.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\tcp.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\timeout.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\udp.c" />
+    <ClCompile Include="..\..\src\dep\libs\luasocket\wsocket.c" />
     <ClCompile Include="..\..\src\dep\libs\lua\lapi.c" />
     <ClCompile Include="..\..\src\dep\libs\lua\lauxlib.c" />
     <ClCompile Include="..\..\src\dep\libs\lua\lbaselib.c" />
@@ -1785,6 +1812,15 @@ del %(Filename).exe
     <None Include="..\..\src\burn\burn_sound_a.asm" />
     <None Include="..\..\src\cpu\e132xs\e132xsop.inc" />
     <None Include="..\..\src\dep\libs\libpng\_fba_libpng_v1512.txt" />
+    <None Include="..\..\src\dep\libs\luasocket\ftp.lua" />
+    <None Include="..\..\src\dep\libs\luasocket\http.lua" />
+    <None Include="..\..\src\dep\libs\luasocket\ltn12.lua" />
+    <None Include="..\..\src\dep\libs\luasocket\makefile" />
+    <None Include="..\..\src\dep\libs\luasocket\mime.lua" />
+    <None Include="..\..\src\dep\libs\luasocket\smtp.lua" />
+    <None Include="..\..\src\dep\libs\luasocket\socket.lua" />
+    <None Include="..\..\src\dep\libs\luasocket\tp.lua" />
+    <None Include="..\..\src\dep\libs\luasocket\url.lua" />
     <None Include="..\..\src\dep\libs\zlib\zconf.h.in" />
     <None Include="..\..\src\intf\video\scalers\2xsaimmx.asm" />
     <None Include="..\..\src\intf\video\scalers\eagle_fm.asm" />
@@ -1856,7 +1892,7 @@ del %(Filename).exe
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>..\..\src\dep\vc\include\xaudio2;..\..\src\dep\mingw\include\directx9;..\..\src\dep\vc\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\cr716\Dev\luasocket_fbneo\src\dep\libs\luasocket;..\..\src\dep\vc\include\xaudio2;..\..\src\dep\mingw\include\directx9;..\..\src\dep\vc\include;$(IncludePath)</IncludePath>
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
@@ -1874,7 +1910,7 @@ del %(Filename).exe
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IntDir>$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>..\..\src\dep\mingw\include\directx9;..\..\src\dep\vc\include;..\..\src\dep\vc\include\xaudio2;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\cr716\Dev\luasocket_fbneo\src\dep\libs\luasocket;..\..\src\dep\mingw\include\directx9;..\..\src\dep\vc\include;..\..\src\dep\vc\include\xaudio2;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <TargetName>fbneo_vs</TargetName>
@@ -1894,7 +1930,7 @@ del %(Filename).exe
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\src\cpu\sh4;..\..\src\cpu\f8;..\..\src\dep\libs\lib7z;..\..\src\burner\win32\resource;..\..\src\burn\drv\pce;..\..\src\burn\drv\taito;..\..\src\dep\libs\lua;..\..\src\burn\drv\misc_post90s;..\..\src\burn\devices;generated;..\..\src\intf\audio\win32;..\..\src\intf\audio;..\..\src\intf\;..\..\src\intf\video\scalers;..\..\src\intf\video\win32;..\..\src\intf\video;..\..\src\intf\perfcount\win32;..\..\src\intf\perfcount;..\..\src\intf\input\win32;..\..\src\intf\input;..\..\src\intf\cd\win32;..\..\src\intf\cd;..\..\src\intf;..\..\src\burner\win32;..\..\src\dep\libs\zlib;..\..\src\dep\libs\libpng;..\..\src\dep\libs;..\..\src\dep\kaillera\client;..\..\src\dep\kaillera;..\..\src\burn\snd;..\..\src\cpu;..\..\src\burner;..\..\src\burn;..\..\src\cpu\z80;..\..\src\cpu\sh2;..\..\src\cpu\s2650;..\..\src\cpu\nec;..\..\src\cpu\m6809;..\..\src\cpu\m6805;..\..\src\cpu\m6800;..\..\src\cpu\m6502;..\..\src\cpu\m68k;..\..\src\cpu\i8039;..\..\src\cpu\konami;..\..\src\cpu\hd6309;..\..\src\cpu\h6280;..\..\src\cpu\arm7;..\..\src\cpu\arm;..\..\src\cpu\g65816;..\..\src\cpu\spc700;..\..\src\cpu\i8051;..\..\src\cpu\tms32010;..\..\src\cpu\tms34;..\..\src\cpu\i8x41;..\..\src\burn\drv\sega;..\..\src\burn\drv\dataeast;..\..\src\burn\drv\konami;..\..\src\cpu\z180;..\..\src\burn\drv\irem;..\..\src\cpu\upd7810;..\..\src\cpu\v60;..\..\src\cpu\upd7725;..\..\src\cpu\tlcs900;..\..\src\cpu\m377;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAs>Default</CompileAs>
-      <PreprocessorDefinitions>BUILD_WIN32;FASTCALL;_DEBUG;FBNEO_DEBUG;LSB_FIRST;INLINE=__inline static;INCLUDE_LIB_PNGH;C_INLINE=__inline;MAME_INLINE=__inline static;_CRT_SECURE_NO_WARNINGS;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;INCLUDE_7Z_SUPPORT;_7ZIP_PPMD_SUPPPORT;_7ZIP_ST;INCLUDE_AVI_RECORDING;USE_SPEEDHACKS;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BUILD_WIN32;FASTCALL;_DEBUG;FBNEO_DEBUG;LSB_FIRST;INLINE=__inline static;INCLUDE_LIB_PNGH;C_INLINE=__inline;MAME_INLINE=__inline static;_CRT_SECURE_NO_WARNINGS;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;INCLUDE_7Z_SUPPORT;_7ZIP_PPMD_SUPPPORT;_7ZIP_ST;INCLUDE_AVI_RECORDING;USE_SPEEDHACKS;_USE_MATH_DEFINES;WIN32LUASOCKET_EXPORTS;LUASOCKET_DEBUG;LUASOCKET_API=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <EnablePREfast>true</EnablePREfast>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <ObjectFileName>$(IntDir)1\1\%(RelativeDir)\</ObjectFileName>
@@ -1905,7 +1941,7 @@ del %(Filename).exe
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ShowProgress>LinkVerbose</ShowProgress>
-      <AdditionalDependencies>user32.lib;gdi32.lib;comdlg32.lib;comctl32.lib;shell32.lib;winmm.lib;advapi32.lib;setupapi.lib;vfw32.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>user32.lib;gdi32.lib;comdlg32.lib;comctl32.lib;shell32.lib;winmm.lib;advapi32.lib;setupapi.lib;vfw32.lib;wininet.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <SubSystem>Windows</SubSystem>
       <IgnoreSpecificDefaultLibraries>winspool.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</IgnoreSpecificDefaultLibraries>
@@ -1953,7 +1989,7 @@ del %(Filename).exe
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>..\..\src\cpu\sh4;..\..\src\burn\drv\pce;..\..\src\dep\libs\lib7z;..\..\src\burner\win32\resource;..\..\src\burn\drv\taito;..\..\src\burn\drv\misc_post90s;..\..\src\burn\devices;generated;..\..\src\intf\audio\win32;..\..\src\intf\audio;..\..\src\intf\;..\..\src\intf\video\scalers;..\..\src\dep\libs\lua;..\..\src\intf\video\win32;..\..\src\intf\video;..\..\src\intf\perfcount\win32;..\..\src\intf\perfcount;..\..\src\intf\input\win32;..\..\src\intf\input;..\..\src\intf\cd\win32;..\..\src\intf\cd;..\..\src\intf;..\..\src\burner\win32;..\..\src\dep\libs\zlib;..\..\src\dep\libs\libpng;..\..\src\dep\libs;..\..\src\dep\kaillera\client;..\..\src\dep\kaillera;..\..\src\burn\snd;..\..\src\cpu;..\..\src\burner;..\..\src\burn;..\..\src\cpu\z80;..\..\src\cpu\sh2;..\..\src\cpu\s2650;..\..\src\cpu\f8;..\..\src\cpu\nec;..\..\src\cpu\m6809;..\..\src\cpu\m6805;..\..\src\cpu\m6800;..\..\src\cpu\m6502;..\..\src\cpu\m377;..\..\src\cpu\m68k;..\..\src\cpu\i8039;..\..\src\cpu\konami;..\..\src\cpu\hd6309;..\..\src\cpu\h6280;..\..\src\cpu\arm7;..\..\src\cpu\arm;..\..\src\cpu\g65816;..\..\src\cpu\spc700;..\..\src\cpu\i8051;..\..\src\cpu\tms32010;..\..\src\cpu\tms34;..\..\src\cpu\i8x41;..\..\src\burn\drv\sega;..\..\src\burn\drv\dataeast;..\..\src\burn\drv\konami;..\..\src\cpu\z180;..\..\src\burn\drv\irem;..\..\src\cpu\upd7810;..\..\src\cpu\v60;..\..\src\cpu\upd7725;..\..\src\cpu\tlcs900;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>BUILD_WIN32;FASTCALL;LSB_FIRST;INLINE=__inline static;INCLUDE_LIB_PNGH;INCLUDE_7Z_SUPPORT;_7ZIP_PPMD_SUPPPORT;_7ZIP_ST;C_INLINE=__inline;MAME_INLINE=__inline static;_CRT_SECURE_NO_WARNINGS;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;INCLUDE_AVI_RECORDING;USE_SPEEDHACKS;_USE_MATH_DEFINES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>BUILD_WIN32;FASTCALL;LSB_FIRST;INLINE=__inline static;INCLUDE_LIB_PNGH;INCLUDE_7Z_SUPPORT;_7ZIP_PPMD_SUPPPORT;_7ZIP_ST;C_INLINE=__inline;MAME_INLINE=__inline static;_CRT_SECURE_NO_WARNINGS;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;INCLUDE_AVI_RECORDING;USE_SPEEDHACKS;_USE_MATH_DEFINES;_WIN32LUASOCKET_EXPORTS;LUASOCKET_DEBUG;LUASOCKET_API=__declspec(dllexport);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <ObjectFileName>$(IntDir)1\1\%(RelativeDir)\</ObjectFileName>
@@ -1966,7 +2002,7 @@ del %(Filename).exe
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>user32.lib;gdi32.lib;comdlg32.lib;comctl32.lib;shell32.lib;winmm.lib;advapi32.lib;setupapi.lib;vfw32.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>user32.lib;gdi32.lib;comdlg32.lib;comctl32.lib;shell32.lib;winmm.lib;advapi32.lib;setupapi.lib;vfw32.lib;wininet.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>winspool.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</IgnoreSpecificDefaultLibraries>

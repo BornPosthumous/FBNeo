@@ -1207,6 +1207,48 @@
     <ClInclude Include="..\..\src\burner\inputbuf.h">
       <Filter>burner</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\auxiliar.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\buffer.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\except.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\inet.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\io.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\luasocket.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\mime.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\options.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\select.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\socket.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\tcp.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\timeout.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\udp.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\dep\libs\luasocket\wsocket.h">
+      <Filter>libs\luasocket</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\burn\burn.cpp">
@@ -4719,6 +4761,45 @@
     <ClCompile Include="..\..\src\burn\drv\taito\d_halleys.cpp">
       <Filter>Burn\drv\taito</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\auxiliar.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\buffer.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\except.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\inet.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\io.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\luasocket.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\mime.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\options.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\select.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\tcp.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\timeout.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\udp.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dep\libs\luasocket\wsocket.c">
+      <Filter>libs\luasocket</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Burn">
@@ -4976,6 +5057,9 @@
     <Filter Include="cpus\sh4">
       <UniqueIdentifier>{1eeb3491-c4c0-441d-a899-df353583a3f3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="libs\luasocket">
+      <UniqueIdentifier>{d1769d58-759b-4149-b988-ec41be49e7bf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\src\burn\burn_sound_a.asm">
@@ -5010,6 +5094,33 @@
     </None>
     <None Include="..\..\src\cpu\e132xs\e132xsop.inc">
       <Filter>cpus\e132xs</Filter>
+    </None>
+    <None Include="..\..\src\dep\libs\luasocket\ftp.lua">
+      <Filter>libs\luasocket</Filter>
+    </None>
+    <None Include="..\..\src\dep\libs\luasocket\http.lua">
+      <Filter>libs\luasocket</Filter>
+    </None>
+    <None Include="..\..\src\dep\libs\luasocket\ltn12.lua">
+      <Filter>libs\luasocket</Filter>
+    </None>
+    <None Include="..\..\src\dep\libs\luasocket\makefile">
+      <Filter>libs\luasocket</Filter>
+    </None>
+    <None Include="..\..\src\dep\libs\luasocket\mime.lua">
+      <Filter>libs\luasocket</Filter>
+    </None>
+    <None Include="..\..\src\dep\libs\luasocket\smtp.lua">
+      <Filter>libs\luasocket</Filter>
+    </None>
+    <None Include="..\..\src\dep\libs\luasocket\socket.lua">
+      <Filter>libs\luasocket</Filter>
+    </None>
+    <None Include="..\..\src\dep\libs\luasocket\tp.lua">
+      <Filter>libs\luasocket</Filter>
+    </None>
+    <None Include="..\..\src\dep\libs\luasocket\url.lua">
+      <Filter>libs\luasocket</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
